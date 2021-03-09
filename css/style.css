@@ -1,0 +1,50 @@
+:root {
+  --pic-width: 500px;
+  --pic-height: 500px;
+}
+body {
+  background: white  
+}
+
+
+#gallery {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(var(--pic-width), 1fr));
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+a,
+figcaption {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+figure {
+  border-radius: 0px;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: var(--pic-width);
+  margin: auto;
+}
+
+img {
+  max-width: var(--pic-width);
+  max-height: var(--pic-height);
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 3px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
