@@ -10,8 +10,8 @@ app.get('/', function(request, response){
 });
 
 app.use(function(request, response) {
-  response.status(404);
-  response.send('<h1>Custom 404: File Not Found</h1>');
+  response.status(400);
+  response.render('404.jade', {title: '404 File not Found'});
 });
 
 const PORT = process.env.PORT || 3000;

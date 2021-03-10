@@ -1,11 +1,11 @@
-# CPTN 262-a2
+# CPTN 262-a3
 Joel Kaye
 
 ## Github Repository
-  https://github.com/kayej22?tab=repositories
+  https://github.com/kayej22/cpnt262-a3
 
-## Github Pages
-   https://kayej22.github.io/cpnt262-a2/
+## Heroku Link
+   https://cpnt262-a3-joel.herokuapp.com/
 
 
 ## attributions
