@@ -78,6 +78,9 @@ https://images.pexels.com/photos/2587319/pexels-photo-2587319.jpeg?auto=compress
 
 ### code
 
+  Custom 404 page
+  https://www.hacksparrow.com/webdev/express/custom-error-pages-404-and-500.html
+
   Fluid Card Grid code taken from Bryan Robinson
   https://codepen.io/brob/pen/MvwbMa?editors=1100
 
