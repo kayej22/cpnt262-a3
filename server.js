@@ -1,19 +1,22 @@
-const http = require ('http');
-const dayjs = require('dayjs');
+const path = require('path');
+const express = require('express');
+const app = express();
 
+app.use(express.static(path.join(__dirname, 'public')));
 
-
-const now =dayjs();
-console.log(dayjs);
-console.log(now);
-
-const server = http.createServer(function(request,response) {
-  console.log(request.url);
-
-  response.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
-  response.end("<h1>Waaaaaaazzzzzzzup!!</h1>");
+app.get('/', function(request, response){
+  console.log(response);
+  response.send('<h1>Wazzzzzzzzzup?</h1>');
 });
 
-server.listen(8080, function(){
-  console.log('listening on port 8080.')
+app.use(function(request, response) {
+  response.status(404);
+  response.send('<h1>Custom 404: File Not Found</h1>');
+});
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, function(){
+  console.log(`Listening on port: ${PORT}`);  
 })
+
